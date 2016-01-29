@@ -4,18 +4,111 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "fragments";
 
-$header-color : #fa4b2a;
-$white 		: #fff;
-$black 		: #333;
-$lightred	: #dc4225;
-$navyblue	: #292484;
-$darkgreen	: #417711;
-$darkyellow : #d38312;
-$blue		: #002f4b;
-$lightyellow: #e0be00;
-$text-color	: #444;
-$grey		: #555;
-$lightgrey	: #999;
+ #container{
+    width 		: 320px;
+    height 		: 400px;
+    font-family	: 'Slabo 27px', serif;
+}
 
-$font-stack	: Adelle,Georgia,serif;
+#site_header{
+    width : 320px;
+    height : 61px;
+    background-color : $header-color;
+    position : fixed;
+    z-index:3;
+}
+
+#hamburger {
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    padding: 14px 23px;
+    width: 33px;
+    background-color: $header-color;
+    float: left;
+    box-sizing: border-box;
+}
+
+#hamburger div {
+    height: 3px;
+    margin-top: 4px;
+    width: 22px;
+    background-color: $white;
+}
+
+#header_logo{
+    float:left;
+    display:inline-block;
+    width:  173px;
+    text-align:center;
+    img{
+        width:100%;
+        margin-top: 5px;
+        margin-left: 8px;
+    }
+}
+
+#drawer {
+    position: absolute;
+    top:43px;
+    bottom:0;
+    height:  706px;
+	width: 280px;
+    background: $black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*background:*/
+    transition: 1s;
+    left: -280px;
+    z-index: 2;
+
+
+    ul {
+    	list-style: none;
+    	padding: 0;
+	}
+	.login{
+
+	}
+
+	li {
+    	margin: 0;
+   		width: 100%;
+    	padding: 11px;
+    	height: 24px;
+    	background-color: #222;
+    	border-top: 1px solid #2f2f2f;
+	}
+
+	a {
+    	display: block;
+   	 	text-decoration: none;
+    	color: $white;
+    	font-size:15px;
+	}
+	a:hover {
+	 	color: $header-color;
+	 	
+	}
+
+}
+
+#drawer.drawer_left {
+    transition: 1s;
+    left: 0px;
+}
+.content{
+	width:320px;
+	height:400px;
+}
+.news_one{
+		width:320px;
+		height:100px;
+	    background-image: url("https://cdn2.vox-cdn.com/thumbor/UE_-U0WsTlqBdb6DgOF4wClN7Vk=/562x0:2429x1…com/uploads/chorus_image/image/48666971/20151010CASF_Water02145_1.0.0.jpg");
+		
+}
+
+
+ 
