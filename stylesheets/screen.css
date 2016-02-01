@@ -67,25 +67,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 9, ../sass/screen.scss */
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* line 12, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 #container {
-  width: 320px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   font-family: 'Slabo 27px', serif;
+  cursor: pointer;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 #site_header {
-  width: 320px;
+  width: 100%;
   height: 65px;
   background-color: #fa4b2a;
   position: fixed;
   z-index: 3;
+  top: 0;
 }
 
 /* line 26, ../sass/screen.scss */
@@ -126,7 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #new_articles {
   float: right;
   display: inline-block;
-  width: 88px;
+  width: 75px;
   text-align: center;
   height: 48px;
   border-left: 1px solid #fff;
@@ -137,12 +134,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 65, ../sass/screen.scss */
 #new_articles strong {
   display: block;
-  font-size: 35px;
+  font-size: 33px;
   font-weight: bold;
 }
 /* line 70, ../sass/screen.scss */
 #new_articles em {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 /* line 75, ../sass/screen.scss */
@@ -256,14 +253,157 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 172, ../sass/screen.scss */
 #contents {
   margin: 0 auto;
-  width: 320px;
-  height: 400px;
+  width: 100%;
+  margin-top: 65px;
+  position: relative;
 }
 
-/* line 177, ../sass/screen.scss */
-.news_one {
-  width: 320px;
-  height: 100px;
+/* line 178, ../sass/screen.scss */
+.news_slot {
+  position: relative;
+  margin: 0 auto;
+  min-height: 175px;
+  dispaly: block;
+}
+/* line 183, ../sass/screen.scss */
+.news_slot a {
+  text-decoration: none;
+}
+
+/* line 188, ../sass/screen.scss */
+.title {
+  font-weight: 400;
+  z-index: 2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 27px;
+  line-height: 1.2;
+  position: relative;
+  padding: 18px;
+  box-sizing: border-box;
+  padding-bottom: 0;
+  white-space: normal;
+}
+
+/* line 201, ../sass/screen.scss */
+.by {
+  font-weight: 0;
+  line-height: 0;
+  font-size: 15px;
+  padding-top: 7px;
+}
+
+/* line 207, ../sass/screen.scss */
+.news {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 219, ../sass/screen.scss */
+.news::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+/* line 228, ../sass/screen.scss */
+.n_one {
+  background-image: url("https://cdn2.vox-cdn.com/thumbor/5IDBWEBU6NVmKx8QgfEAM7aQLK4=/0x79:1275x796/340x192/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48692457/airmail.0.0.jpg");
+}
+
+/* line 231, ../sass/screen.scss */
+.n_one::after {
+  background-image: linear-gradient(135deg, #292484, #dc4225);
+}
+
+/* line 234, ../sass/screen.scss */
+.n_two {
   background-image: url("https://cdn0.vox-cdn.com/thumbor/6-EhbtyEYYJeCp5JnAXjzcpCztE=/0x406:3696x1638/800x267/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48678951/GettyImages-486026810.0.jpg");
+}
+
+/* line 237, ../sass/screen.scss */
+.n_two::after {
+  background-image: linear-gradient(135deg, #002f4b, #417711);
+}
+
+/* line 240, ../sass/screen.scss */
+.n_three {
+  background-image: url("https://cdn0.vox-cdn.com/thumbor/hBiFiQZoJS-f7OLPw5EjywaqE4w=/0x697:3000x1697/800x267/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48666971/20151010CASF_Water02145_1.0.0.jpg");
+}
+
+/* line 243, ../sass/screen.scss */
+.n_three::after {
+  background-image: linear-gradient(135deg, #292484, #a83279);
+}
+
+/* line 246, ../sass/screen.scss */
+.n_four {
+  background-image: url("https://cdn1.vox-cdn.com/thumbor/109pNAMh04CA37OMX7F_TfURdl8=/4x0:1676x1115/300x200/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48682063/armageddon_promotional_still.0.0.jpg");
+}
+
+/* line 249, ../sass/screen.scss */
+.n_four::after {
+  background-image: linear-gradient(135deg, #d38312, #002f4b);
+}
+
+/* line 252, ../sass/screen.scss */
+.n_five {
+  background-image: url("https://cdn0.vox-cdn.com/thumbor/34oq0RT_R9yCTck3qUyL64Xmk28=/0x0:2039x1359/300x200/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48689365/spotify-logo-stock1_2040.0.jpg");
+}
+
+/* line 255, ../sass/screen.scss */
+.n_five::after {
+  background-image: linear-gradient(135deg, #e0be00, #dc4225);
+}
+
+/* line 258, ../sass/screen.scss */
+.n_six {
+  background-image: url("https://cdn2.vox-cdn.com/thumbor/hzpxaGleaQe-tUSJx0rQ6Xi__kA=/148x0:1763x1077/300x200/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48681043/nuts.0.0.jpg");
+}
+
+/* line 261, ../sass/screen.scss */
+.n_six::after {
+  background-image: linear-gradient(135deg, #d38312, #a83279);
+}
+
+/* line 264, ../sass/screen.scss */
+.n_seven {
+  background-image: url("https://cdn3.vox-cdn.com/thumbor/-BIrDh0YIMUadK7Vq3ed4pKegqs=/0x212:1024x895/300x200/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48686519/OlivierElkhatib_2016-Jan-30.0.0.jpg");
+}
+
+/* line 267, ../sass/screen.scss */
+.n_seven::after {
+  background-image: linear-gradient(135deg, #417711, #dc4225);
+}
+
+/* line 271, ../sass/screen.scss */
+.news_scroller {
+  position: relative;
+  margin: 0 auto;
+  min-height: 175px;
+  dispaly: block;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+/* line 280, ../sass/screen.scss */
+.scroll {
+  display: inline-block;
+  width: 85%;
+  height: 175px;
+  vertical-align: top;
   position: relative;
 }
