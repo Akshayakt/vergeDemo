@@ -17,7 +17,7 @@
 
 #site_header{
     width : 320px;
-    height : 61px;
+    height : 65px;
     background-color : $header-color;
     position : fixed;
     z-index:3;
@@ -52,6 +52,25 @@
         margin-left: 8px;
     }
 }
+#new_articles{
+	float:right;
+	display:inline-block;
+	width:88px;
+	text-align:center;
+	height:48px;
+	border-left: 1px solid $white;
+	margin-top: 5px;
+	color: $white;
+	cursor:pointer;
+	strong{
+		display:block;
+		font-size:35px;
+		font-weight: bold;
+	}
+	em{
+		font-size:12px;
+	}
+}
 
 #drawer {
 	box-sizing: border-box;
@@ -62,7 +81,6 @@
     background: $black;
     overflow-x: hidden;
     overflow-y: auto;
-    /*background:*/
     transition: 150 ms;
     left: -280px;
     z-index: 2;
@@ -109,28 +127,56 @@
     	display: block;
    	 	text-decoration: none;
     	color: $white;
-    	font-size:15px;
+    	font-size:14px;
 	}
 	a:hover {
 	 	color: $header-color; 	
 	}
-
+	.social{
+		li{
+	   	 	display: inline-block;
+    		width: 37px;
+    		padding: 12px;
+   	  		background-color: $black; 
+    		height: 15px;
+    		border-top: 0;
+   		}
+	}
 }
 
 #drawer.drawer_left {
-    transition: 150 ms;
-    left: 0px;
-}
-.content{
-	width:320px;
+    transition 	: 150 ms;
+    left 		: 0px;
+  }
+#right_drawer.drawer_right {
+ 	transition 	: 150 ms;
+    right 		: 0;
+ }
+
+ #right_drawer{
+ 	box-sizing	: border-box;
+    position	: fixed;
+    top 		: 48px;
+    bottom 		: 0;
+    right 		: -280px;
+	width 		: 280px;
+    overflow-x 	: hidden;
+    overflow-y 	: auto;
+    transition 	: 150 ms;  
+    z-index 	: 2;
+    border-left : 2px solid $header-color;
+    height		: 100%;
+    background-color : $white;
+ }
+
+#contents{
+	margin : 0 auto;
+	width: 320px;
 	height:400px;
-}
-.news_one{
-		width:320px;
-		height:100px;
-	    background-image: url("https://cdn2.vox-cdn.com/thumbor/UE_-U0WsTlqBdb6DgOF4wClN7Vk=/562x0:2429x1…com/uploads/chorus_image/image/48666971/20151010CASF_Water02145_1.0.0.jpg");
-		
-}
-
-
- 
+ }
+ .news_one{
+ 	width:320px;
+ 	height:100px;
+    background-image: url("https://cdn0.vox-cdn.com/thumbor/6-EhbtyEYYJeCp5JnAXjzcpCztE=/0x406:3696x1638/800x267/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48678951/GettyImages-486026810.0.jpg");
+    position : relative;
+ }
