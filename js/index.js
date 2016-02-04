@@ -9,5 +9,11 @@ document.getElementById('new_articles').addEventListener('click', drawerRight, f
 
 function drawerRight() {
    document.getElementById('right_drawer').classList.toggle('drawer_right');
-// alert("asdsa");
 }
+
+document.getElementById('trending-toggle').addEventListener('click', dropDown, false);
+
+function dropDown() {
+   document.getElementById('drop_down').classList.toggle('drop_down_open');
+   document.getElementById('trending-toggle').classList.toggle('toggle_bg');
+ }
