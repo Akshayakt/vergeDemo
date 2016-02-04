@@ -1,0 +1,281 @@
+
+@import "variables";
+
+#site_footer{
+    margin : 0 auto;
+    width  : 100%;
+    background-color : $black;
+    height : 600px;
+}
+
+.search{
+    margin      : 0 auto;
+    padding     : 25px;
+    padding-left : 33px;
+    text-align  : center;
+    box-sizing  : border-box;
+    float       : left;
+    width       : 90%;
+    input {
+        background-color: $white;
+        padding         : 10px;
+        height          : 25px;
+        font-size       : 16px;
+        color           : $lightgrey;
+        width           : 100%;
+    }
+}
+
+.footer_img {
+    display     : none;
+}
+
+.section{
+    margin      : 0 auto;
+    width       : 50%;
+    box-sizing  : border-box;
+    float       : left;
+    padding-left : 30px;
+    ul{
+        li {
+            margin  : 0;
+            width   : 100%;
+            height  : 35px;
+             a {
+                text-decoration : none;
+                color       : $lightgrey;
+                font-size   : 16px;
+                font-weight : bold;
+            }
+            a:hover {
+                color   : $white;
+            }
+        }   
+    }
+}
+
+
+.footer_header {
+    display     : none;
+}
+
+.basic {
+    display : inline-block;
+}
+
+.else_where {
+    margin       : 0 auto;
+    width        : 100%;
+    box-sizing   : border-box;
+    text-align   : center;
+    clear        : both;
+    margin-top   : 20px;
+    li {
+        display     : inline-block;
+        width       : 21px;
+        background-color : $white;
+        padding     : 6px;
+        margin-left : 7px;
+        a {
+            color   : $black;
+        }
+    }
+}
+
+.vox{
+    margin      : 0 auto;
+    width       : 100%;
+    box-sizing  : border-box;
+    text-align  : center;
+    padding     : 23px;
+    p {
+        margin-top  : 13px;
+        color   : $lightgrey;
+    }
+    a {
+        text-decoration : none;       
+        color   : $header-color;
+    }
+    a:hover { 
+        text-decoration: underline;
+    }
+}
+
+.new_else {
+    display     : none;
+}
+
+.left_corner {
+    display : none;
+}
+
+.else {
+    display     : none;
+}
+@media screen and (min-width: 500px) {
+	.section {
+    	    width   : 33%;
+    	}
+
+    .else_where {
+        display : none;
+    	}
+
+    .icons {
+            display     : none;
+        }
+
+    .new_else {
+        display     : inline-block;
+        width       : 33%;
+        margin      : 0 auto;
+        box-sizing  : border-box;
+        float       : left;
+        padding-left : 30px;
+        ul{
+            li {
+                margin  : 0;
+                width   : 100%;
+                height  : 35px;
+                a {
+                    text-decoration : none;
+                    color       : $lightgrey;
+                    font-size   : 16px;
+                    font-weight : bold;
+                }
+                a:hover {
+                    color   : $white;
+                }
+            }   
+     	}
+
+    }
+
+    .vox {
+        clear   : both;
+    }
+ }
+
+@media screen and (min-width: 600px) {
+	#site_footer {
+        height   : 500px;
+      }
+
+      .search {
+        width   : 35%;
+        clear   : both;
+        padding-left : 17px;
+        padding-top  : 0;
+      }
+
+       .footer_img {
+        float   : left;
+        display :inline-block;
+        width   :100%;
+        margin  : 0 auto;
+        padding-top : 31px;
+        padding-bottom : 10px;
+        img {
+            width   : 100%;
+        }
+      }
+
+       .section {
+            width   : 22%;
+            padding-top : 33px;
+      }
+
+       .footer_header{
+        display     : block;
+        color       : $lightgrey;
+        height      : 35px;
+        font-size   : 12px;
+        font-weight : bold;
+        em {
+            color   : $header-color;
+        }
+      }
+
+      .new_else {
+        width       : 20%;
+        padding-top : 33px;
+      }
+
+      .vox {
+        margin  : 0 auto;
+        padding : 0;
+        width   : auto;
+        float   : right;
+        clear   : none;
+        text-align  : right;
+        display  : inline;
+      }
+
+      .left_corner {
+        display : inline-block;
+        margin  : 0 auto;
+        width   : auto;
+        float   : left;
+        padding : 11px;
+        clear   : both;
+        box-sizing : border-box;
+        
+        .sys {
+            color     : $lightgrey;
+        }
+        .sys:hover {
+            text-decoration     : none;
+        }
+        a {
+            text-decoration : none;
+            color     : $header-color;
+            display   : block;
+            font-size : 13px;
+            padding   : 3px;
+        }
+
+        a:hover {
+            text-decoration : underline;
+        }
+      }
+}
+
+@media screen and (min-width: 800px) {
+    .new_else{
+        display     : none;
+    }
+
+    .else{
+        display     : inline-block;
+        width       : 20%;
+        margin      : 0 auto;
+        box-sizing  : border-box;
+        float       : left;
+        padding-left : 30px;
+        padding-top   : 36px;
+        ul{
+            li {
+                margin  : 0;
+                width   : 100%;
+                height  : 35px;
+                a {
+                    text-decoration : none;
+                    color       : $lightgrey;
+                    font-size   : 16px;
+                    font-weight : bold;
+                    i {
+                        background-color : $white;
+                        color            : $black;
+                        padding          : 5px;
+                        width            : 16px;
+                        margin-right     : 7px;
+                     }
+                }
+                a:hover {
+                    color   : $white;
+                }
+            }   
+        }  
+
+    }
+}

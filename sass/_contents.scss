@@ -1,0 +1,309 @@
+
+@import "variables";
+#contents {
+	margin     : 0 auto;
+	width      : 100%;
+    position   :relative;
+ }
+
+ .news_slot {
+    position    : relative;
+    margin      : 0 auto;
+    min-height  : 175px;
+    dispaly     : block;
+    a {
+        text-decoration : none;
+    }   
+ }
+
+ .title {
+    font-weight     : 400;
+    z-index         : 2;
+    text-shadow     : 1px 1px 2px rgba(0,0,0,0.5);
+    color           : $white;
+    font-size       : 27px;
+    line-height     : 1.2;
+    position        : relative;
+    padding         : 18px;
+    box-sizing      : border-box;
+    padding-bottom  : 0;
+    white-space     : normal;
+}
+
+ .by {
+    font-weight     : 0;
+    line-height     : 0;
+    font-size       : 15px;
+    padding-top     : 7px;
+ }
+
+ .comment_count {
+    float       : right;
+    position    : relative;
+    text-align  : center;
+    min-width   : 25px;
+    padding     : 2px;
+    margin-right: 17px;
+    font-weight : 700;
+    font-size   : 16px;
+    padding-bottom: 4px;
+ }
+
+.comment_count::after{
+    content     : "";
+    position    : absolute;
+    top         : 100%;
+    right       : 0;
+    width       : 0;
+    height      : 0;
+    border      : 0 solid transparent;
+    border-top-color : $black;
+    border-width : 6px 8px 0 0px;
+}
+
+ .comment_bc {
+    background-color : $yellow;
+    color            : $black; 
+ }
+ 
+ .news {
+    margin      : 0 auto;
+    width       : 100%;
+    height      : 100%;
+    position    : absolute;
+    top         : 0;
+    right       : 0;
+    left        : 0;
+    background-position : center;
+    background-size     : cover;
+    background-repeat   : no-repeat;
+}
+
+.news::after{
+    content     : "";
+    position    : absolute;
+    top         : 0;
+    left        : 0;
+    right       : 0;
+    bottom      : 0;
+    opacity     : 0.7;
+}
+
+.n_one{
+    background-image: url("../images/airmail.0.0.jpg");
+}
+
+.n_one::after{
+    background-image: linear-gradient(135deg, $navyblue,$lightred);
+}
+
+.n_two{
+    background-image: url("../images/gett.jpg");
+}
+
+.n_two::after{
+     background-image: linear-gradient(135deg, $blue,$darkgreen);
+}
+
+.n_three{
+    background-image: url("../images/damm.jpg");
+}
+
+.n_three::after{
+     background-image: linear-gradient(135deg, $navyblue,$rose);
+}
+
+.n_four{
+    background-image: url("../images/arm.jpg");
+}
+
+.n_four::after{
+    background-image: linear-gradient(135deg,$darkyellow,$blue);
+}
+
+.n_five{
+    background-image: url("../images/spo.jpg");
+}
+
+.n_five::after{
+    background-image: linear-gradient(135deg,$lightyellow,$lightred);
+}
+
+.n_six{
+    background-image: url("../images/nuts.0.0.jpg");
+}
+
+.n_six::after{
+    background-image: linear-gradient(135deg,$darkyellow,$rose);
+}
+
+.n_seven{
+    background-image: url("../images/six.jpg");
+}
+
+.n_seven::after{
+    background-image: linear-gradient(135deg,$darkgreen,$lightred);
+}
+
+.news_scroller{
+    position    : relative;
+    margin      : 0 auto;
+    min-height  : 175px;
+    display     : block;
+    overflow-x  : scroll;
+    overflow-y  : hidden;
+    white-space : nowrap;
+    font-size   : 0;
+}
+.scroll {
+    display     : inline-block;
+    width       : 85%;
+    height      : 175px;
+    vertical-align: top;
+    position    : relative;
+}
+
+.news_list {
+    margin      : 0 auto;
+    width       : 100%;
+    position    : relative;
+    box-sizing  : border-box;
+    ul {
+        margin  : 0;
+        padding : 0;
+        
+        li {
+            margin          : 0;
+            padding         : 0;
+            border-bottom   : 2px soild $grey;
+            position        : relative;
+            display         : list-item;
+            height          : 150px;
+        }
+    } 
+}
+
+.mobile_list_img {
+    margin      : 8px 11px;
+    width       : 33%;
+    height      : 60%;
+    position    : relative;
+    display     : inline-block;
+    background-position : center;
+    background-size     : cover;
+    background-repeat   : no-repeat;
+    box-sizing: border-box;
+}
+
+.mobile_list_bg1 {
+    background-image    : url("https://cdn1.vox-cdn.com/thumbor/fNb1V-ZEWfpqqycnv0QPkWO-Gxs=/170x0:849x679/250x250/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/48704755/google-self-driving-car-the-verge-09-1020.0.jpg");
+}
+
+.mobile_list_bg2 {
+    background-image    : url("../images/DSC00256.0.0.jpg");
+}
+
+.mobile_list_bg3 {
+    background-image    : url("../images/finebros.0.0.png");
+}
+
+.mobile_list_bg4 {
+    background-image    : url("../images/timessqcat6_2040.0.0.jpg");
+}
+
+.mobile_list_content{
+    display     : inline-block;
+    box-sizing: border-box;
+    width       : 55%;
+    height      : 75%;
+    vertical-align : top;
+    margin-top      : 10px;
+    h3 {
+        display     : inline-block;
+        font-size   : 18px;
+        font-weight : 400;
+        color       : $text-color;
+        a {
+            text-decoration     : none;
+        }
+    }
+}
+
+.mobile_list_detail {
+    display     : inline-block;
+    margin      : 0 auto;
+    font-size   : 11px;
+    margin-top  : 6px;
+    strong {
+        border-right    : 1px solid $black;
+        margin-right    : 3px;
+        font-weight     : 400;
+        padding-right   : 8px;
+    }
+}
+
+.see_all{
+    margin  : 0 auto;
+    padding : 30px;
+    width   : 100%;
+    height  : 100px;
+    border-top : 1px solid $lgrey;
+    box-sizing : border-box;
+    text-align : center;
+    a {
+        text-decoration : none;
+        color       : $header-color;
+        font-size   : 25px;
+        font-weight : bold;
+    }
+    a:hover { 
+        text-decoration: underline;
+    }
+}
+
+.back_top{
+    margin      : 0 auto;
+    width       : 100%;
+    position    : relative;
+    height      : 60px;
+    box-sizing  : border-box;
+    background-color : $grey;
+    text-align  : center;
+    padding     : 23px;
+    a {
+        text-decoration : none;
+        color       : $white;
+        font-size   : 17px;
+        font-weight : bold;
+    }
+}
+
+@media screen and (min-width: 600px) {
+      .back_top {
+            display     : none;
+      }       
+}
+
+@media screen and (min-width: 700px) {
+      .news_one {
+        width   : 50%;
+        height  : 350px;
+        float   : left;
+      }
+
+      .news_two {
+        width   : 50%;
+        height  : 175px;
+        float   : right;
+        display : inline-block;
+      }
+
+      .news_scroller {
+        clear   : both;
+      }
+
+      .scroll {
+        width   : 50%;
+      }
+}
+
