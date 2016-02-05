@@ -1,5 +1,4 @@
 
-@import "variables";
 #contents {
 	margin     : 0 auto;
 	width      : 100%;
@@ -250,6 +249,7 @@
     border-top : 1px solid $lgrey;
     box-sizing : border-box;
     text-align : center;
+    clear      : both;
     a {
         text-decoration : none;
         color       : $header-color;
@@ -278,10 +278,81 @@
     }
 }
 
+.news_cols{
+    display     : none;
+}
+
 @media screen and (min-width: 600px) {
       .back_top {
             display     : none;
-      }       
+      }  
+      .news_list {
+        display : none;
+      }    
+
+      .news_cols {
+        display : block;
+        padding : 9px;
+      }
+      .news_left {
+        width : 45%;
+        float : left;
+        border-right : 2px solid $lgrey;
+        border-bottom : 2px solid $lgrey;
+        padding-right : 9px;
+      }
+      .news_right {
+       @extend .news_left;
+       float    : right;
+      }
+      .left_one {
+        padding     : 5px;
+        box-sizing : border-box;
+        border-bottom : 2px solid $lgrey;
+        a:hover {
+                color : $header-color;
+                text-decoration : underline;
+            }
+        ul {
+            li {
+                display : inline-block;
+                background-color : $header-color;
+                color       : $white;
+                font-size: 12px;
+                padding: 2px;
+                font-weight: 400;
+            }
+        }
+        h3 {
+            margin-top  : 10px;
+            font-size: 25px;
+            font-weight: 400;   
+
+        }   
+      }
+      .details{
+            padding-bottom: 15px;
+            padding-top: 5px;
+            strong {
+                border-right: 1px solid $black;
+                padding-right: 5px;
+                font-weight     : bold;
+            }
+            em {
+                color   : $grey;
+            }
+        } 
+        .mobile_list_img {
+            width   : 100%;
+            height  : 200px;
+            margin  : 0;
+        }
+        .description {
+            margin-top : 15px;
+            color   :   $grey;
+            font-size : 15px;
+            margin-bottom : 10px;
+        }
 }
 
 @media screen and (min-width: 700px) {
@@ -303,7 +374,7 @@
       }
 
       .scroll {
-        width   : 50%;
+        width   : 60%;
       }
 }
 

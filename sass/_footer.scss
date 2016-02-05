@@ -1,6 +1,4 @@
 
-@import "variables";
-
 #site_footer{
     margin : 0 auto;
     width  : 100%;
@@ -54,13 +52,13 @@
     }
 }
 
+.basic {
+	@extend .section;
+    display : inline-block;
+}
 
 .footer_header {
     display     : none;
-}
-
-.basic {
-    display : inline-block;
 }
 
 .else_where {
